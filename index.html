@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Proyecto base con Vite, HTML, CSS, Bootstrap y JavaScript para un curso de desarrollo web."
+      content="Curriculum vitae web de Rodrigo Mungo, desarrollado con Vite, HTML, CSS, Bootstrap y JavaScript."
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -14,108 +14,112 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <title>Curso Web - Vite Vanilla JS</title>
+    <title>Rodrigo Mungo | CV Web</title>
   </head>
   <body>
     <header class="site-header border-bottom">
       <div class="container py-3">
-        <!--
-          Clase 1:
-          - reemplazar este contenido por tu nombre y tu profesión
-          - agregar una navegación con links internos (#sobre-mi, #habilidades, etc.)
-          - decidir si querés usar navbar de Bootstrap o HTML + CSS propio
-        -->
-        <h1 class="m-0">Tu nombre</h1>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+          <div>
+            <h1 class="m-0">Rodrigo Mungo</h1>
+            <p class="mb-0 text-secondary">Desarrollador Web Frontend</p>
+          </div>
+          <nav aria-label="Navegación principal">
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link px-2" href="#sobre-mi">Sobre mí</a></li>
+              <li class="nav-item"><a class="nav-link px-2" href="#habilidades">Habilidades</a></li>
+              <li class="nav-item"><a class="nav-link px-2" href="#proyectos">Proyectos</a></li>
+              <li class="nav-item"><a class="nav-link px-2" href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="container py-5" id="presentacion">
-        <!--
-          Clase 1:
-          - esta debería ser tu sección hero o presentación principal
-          - podrías agregar una foto, un subtítulo y un botón de contacto
-          - practicá jerarquía de títulos, párrafos y layout con Bootstrap
-        -->
-        <h2>Presentación</h2>
-        <p>
-          Este proyecto base está pensado para que construyas tu perfil profesional paso a paso.
+        <h2 class="mb-3">Presentación</h2>
+        <p class="lead mb-3">
+          Desarrollo experiencias web modernas, enfocadas en performance, claridad de código y buena experiencia de usuario.
         </p>
-
-        <div class="placeholder-box mt-4 p-4">
-          <p class="mb-0 text-secondary">Espacio sugerido para presentación destacada, foto o CTA.</p>
-        </div>
+        <p class="mb-0">
+          Actualmente trabajo con stack JavaScript y herramientas de desarrollo frontend, con foco en construir productos mantenibles y listos para producción.
+        </p>
       </section>
 
       <section class="container py-5 border-top" id="sobre-mi">
-        <!--
-          Clase 1:
-          - usar esta sección para contar quién sos
-          - podrías sumar estudios, experiencia o intereses
-          - si querés, dividila en columnas con Bootstrap
-        -->
         <h2>Sobre mí</h2>
-        <p>Completá esta sección con tu información.</p>
-
-        <div class="placeholder-box mt-4 p-4">
-          <p class="mb-0 text-secondary">Espacio sugerido para texto biográfico, experiencia o educación.</p>
-        </div>
+        <p>
+          Soy Rodrigo Mungo. Por el contexto de este repositorio, tu perfil está orientado al desarrollo web con Vite y JavaScript vanilla, integrando Bootstrap y buenas prácticas de estructura semántica.
+        </p>
+        <p class="mb-0">
+          Esta versión del CV está completada con información que sí se puede inferir de tu entorno técnico. Si querés, en el próximo paso la dejamos lista para búsqueda laboral agregando experiencia, estudios y logros concretos.
+        </p>
       </section>
 
       <section class="container py-5 border-top" id="habilidades">
-        <!--
-          Clase 1:
-          - esta sección puede mostrar skills técnicas o herramientas
-          - podés resolverla con listas, cards o badges
-          - Bootstrap puede ayudarte con la grilla y los espaciados
-        -->
         <h2>Habilidades</h2>
-        <p>Completá esta sección con tecnologías, herramientas o fortalezas profesionales.</p>
-
-        <div class="placeholder-box mt-4 p-4">
-          <p class="mb-0 text-secondary">Espacio sugerido para listas, badges o cards de habilidades.</p>
+        <div class="row g-3 mt-1">
+          <div class="col-12 col-md-6">
+            <div class="placeholder-box p-4">
+              <h3 class="h5">Tecnologías</h3>
+              <ul class="mb-0">
+                <li>HTML5 semántico</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES Modules)</li>
+                <li>Bootstrap 5</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="placeholder-box p-4">
+              <h3 class="h5">Herramientas</h3>
+              <ul class="mb-0">
+                <li>Vite</li>
+                <li>pnpm</li>
+                <li>Git y GitHub</li>
+                <li>ESLint</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="container py-5 border-top" id="proyectos">
-        <!--
-          Clase 1 o tarea:
-          - mostrar proyectos, trabajos o experiencias destacadas
-          - podrías usar cards con título, descripción y links
-          - esta sección suma mucho valor de portfolio
-        -->
         <h2>Proyectos</h2>
-        <p>Completá esta sección con trabajos, prácticas o proyectos personales.</p>
-
-        <div class="placeholder-box mt-4 p-4">
-          <p class="mb-0 text-secondary">Espacio sugerido para cards de proyectos o experiencia.</p>
+        <div class="row g-3 mt-1">
+          <div class="col-12">
+            <article class="placeholder-box p-4">
+              <h3 class="h5 mb-2">CV Web Personal</h3>
+              <p class="mb-2">
+                Sitio personal en formato curriculum, construido con Vite + JavaScript vanilla y Bootstrap. Estructura por secciones con navegación interna y base lista para sumar validaciones con JavaScript.
+              </p>
+              <p class="mb-0 text-secondary">
+                Estado: en desarrollo y mejora continua.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="container py-5 border-top" id="contacto">
-        <!--
-          Clase 2:
-          - acá conviene agregar un formulario de contacto
-          - ejemplos de JS: validar campos, mostrar mensajes, prevenir submit vacío
-          - también podrías agregar botones para mostrar/ocultar información
-        -->
         <h2>Contacto</h2>
-        <p>En la segunda clase esta parte va a incorporar comportamiento.</p>
-
-        <div class="placeholder-box mt-4 p-4">
-          <p class="mb-0 text-secondary">Espacio sugerido para formulario, datos de contacto o links.</p>
+        <p class="mb-3">
+          Podés contactarme para oportunidades laborales, proyectos freelance o colaboración en productos digitales.
+        </p>
+        <div class="placeholder-box p-4">
+          <ul class="mb-0">
+            <li>GitHub: <a href="https://github.com/rnmungo" target="_blank" rel="noopener noreferrer">github.com/rnmungo</a></li>
+            <li>Ubicación: Argentina</li>
+            <li>Email y LinkedIn: pendiente de completar</li>
+          </ul>
         </div>
       </section>
     </main>
 
     <footer class="site-footer border-top">
       <div class="container py-4">
-        <!--
-          Clase 1:
-          - completar este footer con redes, email o links rápidos
-          - mantener consistencia visual con el resto del sitio
-        -->
-        <small>Footer pendiente de completar</small>
+        <small>&copy; 2026 Rodrigo Mungo. CV web desarrollado con Vite + Bootstrap.</small>
       </div>
     </footer>
 
